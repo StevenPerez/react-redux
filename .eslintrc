@@ -54,8 +54,6 @@
 		"jsx-quotes": [1, "prefer-double"],
 		// all components must be defined in the module
 		"react/jsx-no-undef": 2,
-		// all components should have a display name (es6 transpiler name is acceptable)
-		"display-name": [1, { "acceptTranspilerName": true }],
 		// closing brackets on new line for multiline component def
 		"react/jsx-closing-bracket-location": 1,
 		// only add spaces inside object def curlies, not jsx curlies
