@@ -4,6 +4,8 @@ import bodyParser from 'body-parser';
 import ejs from 'ejs-locals';
 import methodOverride from 'method-override';
 
+import ShoppingRouter from './private/router/shopping';
+
 const app = new express();
 const router = express.Router();
 
@@ -22,6 +24,9 @@ app.use(methodOverride());
 router.get('/', function(req, res) {
 	res.render('index.html');
 });
+
+// Shopping Routers
+app.use('/', ShoppingRouter);
 
 // Apply Routers
 app.use('/', router);
